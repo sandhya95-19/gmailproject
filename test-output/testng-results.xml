@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="10486" started-at="2021-01-28T15:59:18 IST" finished-at="2021-01-28T15:59:28 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.Runner1@74a10858]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="10486" started-at="2021-01-28T15:59:18 IST" finished-at="2021-01-28T15:59:28 IST">
+      <class name="tests.Runner1">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.Runner1@74a10858]" name="setUpClass" is-config="true" duration-ms="463" started-at="2021-01-28T15:59:18 IST" finished-at="2021-01-28T15:59:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.Runner1@74a10858]" name="runScenario" duration-ms="9896" started-at="2021-01-28T15:59:18 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-28T15:59:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["google page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[validate google home page]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at pages.GooglePage.fillText(GooglePage.java:34)
+at gluecode.Stepdefs1.method2(Stepdefs1.java:37)
+at ✽.enter text in text box "abdulkalam"(file:///D:/magnitia/org.BDDgoogle/src/test/resources/feature1.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.Runner1@74a10858]" name="tearDownClass" is-config="true" duration-ms="87" started-at="2021-01-28T15:59:28 IST" finished-at="2021-01-28T15:59:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- tests.Runner1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
